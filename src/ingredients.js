@@ -193,11 +193,11 @@ useEffect(()=>{
         <img src={dash} alt="dashboard" style={{width:"40px",paddingBottom:"30px",paddingTop:"10px",paddingRight:"10px",marginLeft:"5px",position:"relative",bottom:"30px",right:"5px",cursor:"pointer",backgroundColor:"white",top:"40px"}} onClick={toggleDrawer(true)}></img>
         <h1 id="z" >Ingredients</h1>
         <AddIcon style={{position: "absolute", // Absolute positioning for better control
-          top: "100px",
+          top: "70px",
           
           cursor: "pointer",
           zIndex: 1000 ,bottom:"100px",cursor:"pointer",right:"300px"}} onClick={handleAddDish} />
-        <h2 style={{float:"right",position:"relative",bottom:"80px",right:"175px",cursor:"pointer"}} onClick={handleAddDish} >Add Dish</h2>
+        <h2 style={{float:"right",position:"relative",bottom:"110px",right:"175px",cursor:"pointer"}} onClick={handleAddDish} >Add Dish</h2>
         <Drawer open={openDrawer} onClose={toggleDrawer(false)}>
           {DrawerList}
       </Drawer>

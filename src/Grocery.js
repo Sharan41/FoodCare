@@ -160,11 +160,11 @@ const Grocery = () => {
         <h1 id="z" >Grocery Purchase</h1>
        
         <AddIcon style={{position: "absolute", // Absolute positioning for better control
-          top: "100px",
+          top: "70px",
           
           cursor: "pointer",
           zIndex: 1000 ,bottom:"100px",cursor:"pointer",right:"300px"}} onClick={handleAddDish} />
-        <h2 style={{float:"right",position:"relative",bottom:"80px",right:"120px",cursor:"pointer"}} onClick={handleAddDish} >Add Ingredient</h2>
+        <h2 style={{float:"right",position:"relative",bottom:"110px",right:"120px",cursor:"pointer"}} onClick={handleAddDish} >Add Ingredient</h2>
         <Drawer open={openDrawer} onClose={toggleDrawer(false)}>
           {DrawerList}
       </Drawer>
