@@ -21,11 +21,13 @@ img.side{
   text-align: center;
   float: right;
 
-  margin-top: 10px;
+  margin-top: 30px;
   background-color: #FFAC1C;
   width: 100px;
-  height: 25px;
+  height: 45px;
+  margin-right:15px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
  h1{
@@ -74,6 +76,7 @@ img.side{
   width: 210px;
   height: 25px;
   border-radius: 10px;
+  cursor:pointer;
 }
 
 Link{
@@ -126,5 +129,10 @@ img.sidea{
 h1#z{
   max-width: 1200px;
   position: relative;
-  left: 250px;
+  bottom:40px;
+  
+  left: 120px;
+}
+h1#b{
+  top: 150px!important;
 }

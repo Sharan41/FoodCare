@@ -90,10 +90,10 @@ const Dashboard = () =>  {
   return (
     <div>
       <div style={{backgroundColor:"#E97451",maxHeight:"135px", color:"white"}}>
-      <img className="sidea" style={{backgroundColor:"#E97451"}} src={apple} alt="pineapple" ></img> 
-      <h1>Food Care</h1>
+     
+      <h1 style={{textAlign:"center",paddingTop:"50px" }}>Food Care</h1>
       <br></br>
-      <img src={dash} alt="dashboard" style={{width:"40px",paddingBottom:"59px",paddingTop:"10px",paddingRight:"10px",marginLeft:"5px",position:"relative",bottom:"30px",right:"5px",cursor:"pointer",backgroundColor:"white"}} onClick={toggleDrawer(true)}></img>
+      <img src={dash} alt="dashboard" style={{width:"40px",paddingBottom:"30px",paddingTop:"10px",paddingRight:"10px",marginLeft:"5px",position:"relative",bottom:"90px",right:"5px",cursor:"pointer",backgroundColor:"white"}} onClick={toggleDrawer(true)}></img>
       </div>
       <h2 style={{textAlign:"center",position:"relative",left:"30px"}}>Overview Metrics</h2>
       <img src={chart} style={{position:"relative",left:"450px"}}></img>

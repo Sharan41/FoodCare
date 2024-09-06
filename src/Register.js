@@ -89,7 +89,7 @@ const Register = () => {
 
       <br></br>
 
-      <input type="submit" id="register" value="Register" onClick={handleSubmit} />
+      <input type="submit" id="register" value="Register"  onClick={handleSubmit} />
 
       <p>Already have an account? <strong><Link to="/Login" style={{textDecoration:"none",color:"green"}}>Sign in here!</Link></strong></p>
       </div>

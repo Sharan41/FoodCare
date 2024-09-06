@@ -140,17 +140,17 @@ const sales = () => {
     <div>
 
       <div>
-        <img className="sidea" style={{position:"relative",right:"5px"}} src={apple} alt="Pineapple" />
-        <img src={dash} alt="dashboard" style={{width:"40px",paddingRight:"10px",marginLeft:"5px",position:"relative",cursor:"pointer",top:"60px",right:"65px"}} onClick={toggleDrawer(true)}></img>
-        <h1 id="z" >Sales Information</h1>
+        
+        <img src={dash} alt="dashboard" style={{width:"40px",paddingBottom:"30px",paddingTop:"10px",paddingRight:"10px",marginLeft:"5px",position:"absolute",cursor:"pointer",top:"30px",left:"5px"}} onClick={toggleDrawer(true)}></img>
+        <h1 style={{paddingTop:"35px"}} >Sales Information</h1>
         <Drawer open={openDrawer} onClose={toggleDrawer(false)}>
           {DrawerList}
       </Drawer>
       </div>
 
-      <div className='table' style={{position:"relative"}}>
+      <div className='table' style={{position:"relative",top:"40px"}}>
         <TableContainer component={Paper}>
-          <Table style={{backgroundColor:"#fbf8e6",width:"800px",position:"relative",left:"450px"}} sx={{ minWidth: 800 }} aria-label="simple table">
+          <Table style={{backgroundColor:"#fbf8e6",width:"800px",position:"relative",left:"350px"}} sx={{ minWidth: 800 }} aria-label="simple table">
             <TableHead>
               <TableRow style={{backgroundColor:"#8e844e"}}>
                 <TableCell>Food</TableCell>

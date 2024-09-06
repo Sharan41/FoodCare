@@ -238,10 +238,10 @@ const menu = () =>  {
   return (
     <div>
       <div >
-      <img className="sidea"  src={apple} alt="pineapple" ></img> 
-      <h1>Weekly Menu</h1>
+      
+      <h1 style={{paddingTop:"40px"}}>Weekly Menu</h1>
       <br></br>
-      <img src={dash} alt="dashboard" style={{width:"40px",paddingBottom:"59px",paddingTop:"10px",paddingRight:"10px",marginLeft:"5px",position:"relative",bottom:"30px",right:"5px",cursor:"pointer",backgroundColor:"white"}} onClick={toggleDrawer(true)}></img>
+      <img src={dash} alt="dashboard" style={{width:"40px",paddingBottom:"30px",paddingTop:"10px",paddingRight:"10px",marginLeft:"5px",position:"relative",bottom:"95px",right:"5px",cursor:"pointer",backgroundColor:"white"}} onClick={toggleDrawer(true)}></img>
       </div>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}

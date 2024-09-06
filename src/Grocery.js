@@ -155,11 +155,16 @@ const Grocery = () => {
     <div>
 
       <div>
-        <img className="sidea" style={{position:"relative",right:"5px"}} src={apple} alt="Pineapple" />
-        <img src={dash} alt="dashboard" style={{width:"40px",paddingRight:"10px",marginLeft:"5px",position:"relative",cursor:"pointer",top:"60px",right:"65px"}} onClick={toggleDrawer(true)}></img>
+        
+        <img src={dash} alt="dashboard" style={{width:"40px",paddingBottom:"30px",paddingTop:"10px",paddingRight:"10px",marginLeft:"5px",position:"relative",bottom:"90px",right:"5px",cursor:"pointer",backgroundColor:"white",top:"40px"}} onClick={toggleDrawer(true)}></img>
         <h1 id="z" >Grocery Purchase</h1>
-        <AddIcon style={{float:"right",position:"relative",bottom:"60px",cursor:"pointer",right:"210px"}} onClick={handleAddDish} />
-        <h2 style={{float:"right",position:"relative",bottom:"83px",right:"10px",cursor:"pointer"}} onClick={handleAddDish} >Add Ingredient</h2>
+       
+        <AddIcon style={{position: "absolute", // Absolute positioning for better control
+          top: "100px",
+          
+          cursor: "pointer",
+          zIndex: 1000 ,bottom:"100px",cursor:"pointer",right:"300px"}} onClick={handleAddDish} />
+        <h2 style={{float:"right",position:"relative",bottom:"80px",right:"120px",cursor:"pointer"}} onClick={handleAddDish} >Add Ingredient</h2>
         <Drawer open={openDrawer} onClose={toggleDrawer(false)}>
           {DrawerList}
       </Drawer>
@@ -167,7 +172,7 @@ const Grocery = () => {
 
       <div className='table' style={{position:"relative",bottom:"50px"}}>
         <TableContainer component={Paper}>
-          <Table style={{backgroundColor:"#fbf8e6",width:"800px",position:"relative",left:"450px"}} sx={{ minWidth: 800 }} aria-label="simple table">
+          <Table style={{backgroundColor:"#fbf8e6",width:"800px",position:"relative",left:"330px"}} sx={{ minWidth: 800 }} aria-label="simple table">
             <TableHead>
               <TableRow style={{backgroundColor:"#8e844e"}}>
                 <TableCell>Ingredient</TableCell>
